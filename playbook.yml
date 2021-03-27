@@ -4,8 +4,10 @@
   hosts:
    - all
      #   - all2
-  any_errors_fatal: false
   roles:
    - motd
    - ntp
    - apache  
+   - mysql
+     #become: yes
+

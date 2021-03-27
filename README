@@ -1,0 +1,72 @@
+.
+├── git.start
+├── playbook.yml
+└── roles
+    ├── apache
+    │   ├── defaults
+    │   │   └── main.yml
+    │   ├── handlers
+    │   │   └── main.yml
+    │   ├── tasks
+    │   │   ├── configure-Debian.yml
+    │   │   ├── configure-RedHat.yml
+    │   │   ├── main.yml
+    │   │   ├── setup-Debian.yml
+    │   │   └── setup-RedHat.yml
+    │   ├── templates
+    │   │   └── vhosts.conf.j2
+    │   └── vars
+    │       ├── apache-22.yml
+    │       ├── apache-24.yml
+    │       ├── Debian.yml
+    │       └── RedHat.yml
+    ├── motd
+    │   ├── defaults
+    │   │   └── main.yml
+    │   ├── tasks
+    │   │   └── main.yml
+    │   └── templates
+    │       └── motd.j2
+    ├── mysql
+    │   ├── defaults
+    │   │   └── main.yml
+    │   ├── handlers
+    │   │   └── main.yml
+    │   ├── tasks
+    │   │   ├── configure.yml
+    │   │   ├── databases.yml
+    │   │   ├── main.yml
+    │   │   ├── replication.yml
+    │   │   ├── secure-installation.yml
+    │   │   ├── setup-Debian.yml
+    │   │   ├── setup-RedHat.yml
+    │   │   ├── users.yml
+    │   │   └── variables.yml
+    │   ├── templates
+    │   │   ├── my.cnf.j2
+    │   │   ├── root-my.cnf.j2
+    │   │   └── user-my.cnf.j2
+    │   └── vars
+    │       ├── Debian-10.yml
+    │       └── Debian.yml
+    └── ntp
+        ├── defaults
+        │   └── main.yml
+        ├── handlers
+        │   └── main.yml
+        ├── tasks
+        │   ├── debian.yml
+        │   ├── main.yml
+        │   └── redhat.yml
+        ├── templates
+        │   └── ntp.conf.j2
+        └── vars
+            ├── Debian.yml
+            └── RedHat.yml
+
+23 directories, 41 files
+
+
+
+Source: 
+ - https://github.com/geerlingguy
