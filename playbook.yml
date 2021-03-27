@@ -1,0 +1,11 @@
+---
+
+- name: Setup our servers
+  hosts:
+   - all
+     #   - all2
+  any_errors_fatal: false
+  roles:
+   - motd
+   - ntp
+   - apache  
