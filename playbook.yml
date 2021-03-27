@@ -8,6 +8,6 @@
    - motd
    - ntp
    - apache  
-   - mysql
+     #- mysql
      #become: yes
 

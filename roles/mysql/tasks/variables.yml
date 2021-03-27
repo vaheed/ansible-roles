@@ -12,6 +12,8 @@
   set_fact:
     mysql_packages: "{{ __mysql_packages | list }}"
   when: mysql_packages is not defined
+      skip: true
+
 
 - name: Define mysql_daemon.
   set_fact:
